@@ -1,6 +1,20 @@
 import React from "react";
+import {usestate} from 'react';
 
-const Navbar=()=>{
+function Dropdown(){
+    const [isDropdownVisible, setIsDropdownVisible]= usestate(false);
+    const [dropdownValue, setDropdownValue]=usestate('');
+
+    const toggleDropdown=()=>{
+        setIsDropdownVisible(!isDropdownVisible);
+    };
+
+    const handleChange=(event)=>{
+          setDropdownValue(event.target.value);
+    }
+}
+
+function Navbar(){
 
     return(
         <div id="navbar">
