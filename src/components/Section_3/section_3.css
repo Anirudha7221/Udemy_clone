@@ -1,0 +1,58 @@
+#section-3{
+    margin: 0 2rem;
+}
+
+#section-3 h1{
+    font-size: 40px;
+}
+
+#section-3 p{
+    font-size: 20px;
+    color: rgb(107, 107, 107);
+}
+
+#plans-containeer{
+    height: 90vh;
+    display: flex;
+    gap: 15px;
+}
+
+#plans-containeer>div{
+    width: 25vw;
+    height: 90%;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 20px;
+    border-top: 10px solid #5022c3;
+}
+
+#active{
+    border-top: 10px solid #a435f0 !important;
+}
+
+.plans div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.button{
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+    cursor: pointer;
+}
+
+.plan-details{
+    width: 30vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+}
+
+.plan-details>img{
+    width: 6%;
+}

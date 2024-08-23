@@ -9,8 +9,7 @@
 
 #companies{
     display: flex;
-    gap: 25px;
-    margin: 0 5rem;
+    gap: 10px;
 }
 
 #companies>div{

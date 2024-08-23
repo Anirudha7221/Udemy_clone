@@ -1,0 +1,47 @@
+#section-6{
+    margin: 2.5rem;
+    background-color: #f0f0f0;
+    padding:20px;
+}
+
+#section-6>h1{
+    border-bottom: 1px solid rgb(208, 198, 198);
+    padding: 10px;
+}
+
+#section-6>div{
+    display: flex;
+    gap: 50px;
+}
+
+#chatGPT>div, #development>div, #design>div, #business>div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.active:hover{
+    color: rgb(103, 6, 188);
+}
+
+#trending-skills{
+    border: 1px solid black;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+#trending-skills p{
+    margin: 1rem;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+#trending-skills:hover{
+    background-color:#dbe2e6 !important; 
+    color: black !important;
+}
+
+.active{
+    color: rgb(129, 5, 238);
+}

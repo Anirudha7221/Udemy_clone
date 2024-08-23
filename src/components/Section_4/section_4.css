@@ -1,0 +1,58 @@
+#section-4{
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 0;
+}
+
+#section-4>div{
+    margin: 0 5rem;
+}
+
+#ratings{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rate_info{
+    border: 1px solid gray;
+    width: 20vw;
+    height: 60vh;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.rate_info p,div{
+    margin-left: 1rem;
+}
+
+#ratings img{
+    width: 40px;
+    height: 40px;
+    margin: 1rem;
+}
+
+.active{
+    color: rgb(129, 5, 238);
+    cursor: pointer;
+}
+
+.rate_info>div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.user{
+    gap: 5px !important; 
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.user>img{
+    border-radius: 50%;
+}
+
+.user-info{
+    color: gray;
+}
+/* color: rgb(129, 5, 238); */

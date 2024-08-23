@@ -1,0 +1,59 @@
+#navbar{
+    height: 10vh;
+    display: flex;
+    gap: 30px;
+    margin: 0 1rem;
+    align-items: center;
+}
+
+#navbar>img{
+    height: 100%;
+}
+
+#searchbar{
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    border-radius: 20px;
+    color: gray;
+}
+
+#searchbar>input{
+    border: none;
+    outline: none;
+    width: 37vw;
+}
+
+#content{
+    display: flex;
+    gap: 20px;
+    width: 350px;
+}
+
+#nav-buttons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+#signup{
+    background-color: black !important;
+    color: white !important;
+}
+
+#nav-buttons>button{
+    width: 65px;
+    height: 40px;
+    padding: 10px;
+    color: black;
+    background-color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#nav-buttons>button:hover{
+    background-color: rgba(193, 191, 191, 0.855);
+}
