@@ -5,21 +5,21 @@
 }
 
 #culture{
-    width: 100%;
-    height: 100%;
-    flex-basis: 60%;
+    height: 50vh;
+    width: 600px;
+    flex-basis: 50%;
 } 
 
 #culture>img{
-    width: 90%;
+    width: 100%;
     height: 100%;
 }
 
 #sales-box{
-    background-color: #40dbb8;
+    background-color: #b228f9;
     flex-basis: 50%;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     height: 100%;
 }
@@ -36,11 +36,73 @@
 }
 
 #skills-info{
-    margin: 0 5rem;
     padding: 5px;
 }
 
 #skills-info>p{
     font-size: 18px;
     color: gray;
+}
+
+@media only screen and (max-width:950px){
+    #hero-cotaineer{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        gap: 10px;
+    }
+    
+    #culture{
+        width: 90%;
+    }
+
+    #culture>img{
+        width: 100%;
+        height: auto;
+    }
+
+    #sales-box{
+        display: none;
+        margin: 0;
+    }
+
+    #hero-containeer{
+        display: flex;
+        margin: 0;
+        flex-direction: column;
+    }
+
+    #skills-info{
+        width: 80%;
+    }
+
+    #skills-info h1 p{
+        font-size: 3em;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width:950px) {
+    #newSales-info{
+        display: none;
+    }
+
+    
+    #newSales-info h1 p{
+        width: 80%;
+        margin: 0;
+        font-size: 5em;
+    }
+}
+
+#newSales-info{
+    margin: 0;
+}
+
+#newSales-info>h1{
+    font-size: 30px;
+}
+
+#newSales-info>p{
+    margin: 0 1rem;
 }

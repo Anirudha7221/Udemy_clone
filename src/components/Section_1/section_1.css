@@ -9,7 +9,6 @@
 
 #companies{
     display: flex;
-    gap: 10px;
 }
 
 #companies>div{
@@ -17,5 +16,34 @@
 }
 
 #companies img{
-    height: 60%;
+    height: 40%;
+    width: 100%;
+}
+
+@media only screen and(max-width:950px){
+    #section-1{
+        width: 80%;
+        margin: 0;
+    }
+
+    #section-1>h3{
+        font-size: 3em;
+        font-weight: 200 !important;
+    }
+
+     #companies{
+        display: grid !important;
+        grid-template-columns: repeat(4, 1fr) !important;
+    } 
+
+    #companies>div{
+        border: 1px solid red;
+        height: 50px;
+        width: 50px;
+    }
+
+    #companies img{
+        width: 80%;
+        height: auto;
+    }
 }

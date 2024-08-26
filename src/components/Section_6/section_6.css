@@ -1,5 +1,5 @@
 #section-6{
-    margin: 2.5rem;
+    margin: 0 2rem;
     background-color: #f0f0f0;
     padding:20px;
 }
@@ -44,4 +44,40 @@
 
 .active{
     color: rgb(129, 5, 238);
+}
+
+@media only screen and (max-width:950px){
+    #section-6{
+        margin: 0;
+        max-width: 100%;
+    }
+
+    #section-6>div{
+        display: inline;
+    }
+
+    #section-6 h1{
+        font-size: 1.2em;
+        margin: 0;
+    }
+
+    #chatGPT, #development, #design, #business{
+        max-width: 100%;
+        margin: 0;
+    }
+
+    #chatGPT div, #development div, #design div, #business div{
+        max-width: 100%;
+        margin: 0;
+    }
+
+    #chatGPT h1, #development h1, #design h1, #business h1{
+        font-size: 1em;
+        margin: 0;
+    }
+
+    #chatGPT h2, #development h2, #design h2, #business h2{
+        font-size: 1em;
+        margin: 0;
+    }
 }

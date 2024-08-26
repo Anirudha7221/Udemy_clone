@@ -1,20 +1,21 @@
 #section-2{
-    margin: 0 1rem;
+    margin: 0;
 }
 
 #goals{
     display: flex;
+    gap: 0;
 }
 
 #goals>div{
     flex-basis: 50%;
+    margin: 0;
 }
 
 .criteria{
     border: 1px solid rgba(225, 221, 221, 0.834);
     width: 40vw;
     height: 40vh;
-    margin: 2rem;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -33,13 +34,13 @@
 }
 
 .criteria h1{
-    margin: 2rem;
+    margin: 0;
 }
 
 .criteria div{
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
 .criteria>div button{
@@ -48,7 +49,6 @@
     border-radius: 5px;
     background: white;
     height: 50%;
-    margin: 2rem;
 }
 
 .criteria p{
@@ -63,14 +63,12 @@
 
 .more>span{
     color: rgb(129, 5, 238);
-    margin-right: 25rem;
 }
 
 #score-card{
     border: 1px solid rgb(210, 208, 208);
     width: 40vw;
-    height: 90%;
-    margin: 4rem;
+    height: 100%;
     border-radius: 20px;
 }
 
@@ -91,7 +89,7 @@
 }
 
 #colours-circle>span{
-    margin: 1rem;
+    margin: 0 1rem;
     width: 25px;
     height: 25px;
     border-radius: 50%;
@@ -114,7 +112,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 3rem;
 }
 
 #score>p{
@@ -127,7 +124,6 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    margin: 2rem;
     border: 1px solid rgb(210, 208, 208);
 }
 
@@ -135,14 +131,10 @@
     color: rgb(129, 5, 238);
 }
 
-#answers{
-    margin: 0 2rem;
-}
-
 #answer-score, .ans{
     display: flex;
     align-items: center;
-    gap: 10px;
+    margin: 1rem;
 }
 
 #answer-score>div{
@@ -165,11 +157,9 @@
 }
 
 #chart{
-    margin: 0 2rem;
     border-bottom: 2px solid rgb(210, 208, 208);
     border-top:2px solid rgb(210, 208, 208); 
     display: flex;
-    justify-content: space-between;
 }
 
 #chart span{
@@ -178,12 +168,11 @@
     border-radius: 50%;
     display: inline-block;
     background-color: rgb(129, 5, 238);
-    margin: 2rem;
 }
 
 #below-score{
     background-color:rgb(210, 208, 208) !important;  
-    margin-right: 20rem !important;
+    /* margin-right: 0 20rem !important; */
 }
 
 #ans-box{
@@ -191,7 +180,6 @@
     align-items: baseline;
     gap: 10px;
     border: 1px solid gray;
-    margin: 2rem;
     background-color: #f6f9fa;
 }
 
@@ -209,5 +197,87 @@
 
 #checkbox{
     border: 1px solid gray;
-    margin: 0 1rem;
+}
+
+@media only screen and (max-width:950px){
+    #section-2{
+        margin: 0;
+    }
+
+    #section-2>h1{
+        font-size: 1.5em;
+        margin: 0;
+    }
+
+    .criteria, #active{
+        display: none !important;
+    }
+
+    #score-card{
+        max-width: 100%;
+        margin: 0;
+    }
+
+    #colours-circle>span{
+        max-width: 100%;
+        margin: 1%;
+         width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    #questions, #score, #performance, #answers, #answer-score{
+        max-width: 100%;
+        margin: 0;
+    }
+
+    #questions h1, #score h1, #chart h2, #answers h2, #ques-no h2{
+        font-size: 1em;
+        text-align: center;
+    }
+
+    #questions div, .ans #answer-score, #ans-box, #checkbox{
+        max-width: 100%;
+        margin: 0;
+    }
+
+    #questions p, #score p, #chart p, #performance p, #answers p, #ques-no p, #ans-box p{
+        font-size: 0.8em;
+    }
+
+    #questions span{
+        display: none;
+    }
+
+    #chart, #chart>div{
+        max-width: 100%;
+        margin: 1%;
+    }
+
+    #chart span{
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        display: inline-block;
+        background-color: rgb(129, 5, 238);
+    }
+
+    #answer-score div{
+        max-width: 100%;
+        margin: 1%;
+    }
+
+    #answer-score p, #answer-score div{
+        font-size: 0.6em;
+    }
+
+    #ans-box{
+        display: inline;
+    }
+
+    #checkbox span{
+        max-width: 100%;
+        margin: 0;
+    }
 }

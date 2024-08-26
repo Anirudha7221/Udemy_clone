@@ -19,6 +19,9 @@ function Navbar(){
 
     return(
         <div id="navbar">
+           <span id="menu" class="material-symbols-outlined">
+                menu
+            </span> 
        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJXzeImAiH1KttGE_h6Si1V2WwaiGPpBUGXQ&s"/>
        <p>Categories</p>
        <div id="searchbar">
@@ -32,10 +35,10 @@ function Navbar(){
             <p>Udemy Business</p>
             <p>Teach on Udemy</p>
        </div>
-        <div id="nav-buttons">
-            <span class="material-symbols-outlined">
+       <span id="active" class="material-symbols-outlined">
                 shopping_cart
-             </span>
+        </span>
+        <div id="nav-buttons">
             <button>Login</button>
             <button id="signup">SignUp</button>
             <button>

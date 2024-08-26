@@ -1,20 +1,21 @@
 #section-3{
-    margin: 0 2rem;
+    margin: 0;
 }
 
 #section-3 h1{
     font-size: 40px;
+    margin: 0 3rem;
 }
 
-#section-3 p{
+#section-3>p{
     font-size: 20px;
     color: rgb(107, 107, 107);
+    margin: 0 3rem;
 }
 
 #plans-containeer{
-    height: 90vh;
+    height: 100vh;
     display: flex;
-    gap: 15px;
 }
 
 #plans-containeer>div{
@@ -23,17 +24,18 @@
     border: 1px solid gray;
     border-radius: 10px;
     padding: 20px;
+    margin: 1rem;
     border-top: 10px solid #5022c3;
 }
 
 #active{
     border-top: 10px solid #a435f0 !important;
+    margin: 0;
 }
 
 .plans div{
     display: flex;
     align-items: center;
-    gap: 10px;
 }
 
 .button{
@@ -42,7 +44,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 2rem;
+    margin: 0 2rem;
     cursor: pointer;
 }
 
@@ -55,4 +57,60 @@
 
 .plan-details>img{
     width: 6%;
+}
+
+@media only screen and (max-width:950px){
+    #section-3, .plans div{
+        margin: 0;
+        max-width: 100%;
+    }
+
+    #section-3 h1{
+        font-size: 1.5em;
+        margin: 0;
+    }
+
+    #section-3 p{
+        font-size: 1em;
+        margin: 0;
+    }
+
+    #plans-containeer{
+        display: inline;
+        align-items: center;
+    }
+
+    #plans-containeer div{
+        margin: 0;
+        max-width: 100%;
+        width: 60%;
+    }
+
+    .plans h2, #plans-containeer h2, .button h2{
+        font-size: 1.5em;
+        width: 300px;
+        /* margin: 0; */
+    }
+
+    .plans p, #plans-containeer p, .plan-details p{
+        /* margin: 0; */
+        font-size: 1em;
+        width: 200px;
+    }
+
+    .button{
+        width: 200% !important;
+        margin: 1rem;
+        height: 70px;
+    }
+
+    .plan-details{
+        width: 20%;
+        height: 20%;
+    }
+
+    .plan-details img{
+        width: 100%;
+        height: auto;
+    }
 }

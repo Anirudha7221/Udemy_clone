@@ -15,8 +15,8 @@
 
 .rate_info{
     border: 1px solid gray;
-    width: 20vw;
-    height: 60vh;
+    width: 40vw;
+    height: 70vh;
     border-radius: 15px;
     background-color: white;
 }
@@ -28,7 +28,7 @@
 #ratings img{
     width: 40px;
     height: 40px;
-    margin: 1rem;
+    margin: 0 1rem;
 }
 
 .active{
@@ -56,3 +56,28 @@
     color: gray;
 }
 /* color: rgb(129, 5, 238); */
+
+@media only screen and (max-width:950px){
+    #section-4{
+        margin: 0;
+    }
+
+    #section-4 h1{
+        font-size: 1.2em;
+        border: 1px solid red;
+        width: 200px;
+        margin: 0;
+    }
+
+    #ratings{
+        display: flex;
+        white-space: none;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .rate-info{
+        margin: 0;
+        max-width: 100%;
+    }
+}
