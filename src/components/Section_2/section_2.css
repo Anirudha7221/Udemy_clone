@@ -1,27 +1,27 @@
 #section-2{
-    margin: 0;
+    margin: 0 5rem;
+}
+
+#section-2 h1{
+    padding: 15px;
 }
 
 #goals{
     display: flex;
-    gap: 0;
+    justify-content: space-evenly;
 }
 
 #goals>div{
     flex-basis: 50%;
-    margin: 0;
 }
 
 .criteria{
     border: 1px solid rgba(225, 221, 221, 0.834);
-    width: 40vw;
-    height: 40vh;
+    width: 35vw;
+    height: 30vh;
     border-radius: 10px;
+    margin: 1rem;
     cursor: pointer;
-}
-
-.criteria:hover{
-    background-color: rgb(237, 237, 237);
 }
 
 #active{
@@ -30,17 +30,16 @@
 }
 
 #active:hover{
-    border: 1px solid rgba(155, 152, 152, 0.834);;
+    border: 1px solid rgba(155, 152, 152, 0.834);
 }
 
 .criteria h1{
-    margin: 0;
+    margin: 0 2rem;
 }
 
 .criteria div{
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 .criteria>div button{
@@ -49,6 +48,10 @@
     border-radius: 5px;
     background: white;
     height: 50%;
+}
+
+.criteria:hover{
+    background-color: rgb(237, 237, 237);
 }
 
 .criteria p{
@@ -67,14 +70,17 @@
 
 #score-card{
     border: 1px solid rgb(210, 208, 208);
-    width: 40vw;
+    width: 35vw;
     height: 100%;
+    padding:10px;
     border-radius: 20px;
 }
 
 #questions{
-    background-color: #f2f0fa;
+    border: 1px solid rgb(215, 215, 215);
+    border-radius: 10px;
     padding: 10px;
+    background-color: #f1eff8;
 }
 
 #questions>h1{
@@ -112,6 +118,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px;
 }
 
 #score>p{
@@ -124,11 +131,16 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    padding: 10px;
     border: 1px solid rgb(210, 208, 208);
 }
 
 #performance>span{
     color: rgb(129, 5, 238);
+}
+
+#answers>h2, #answers>p{
+    margin: 0 2rem;
 }
 
 #answer-score, .ans{
@@ -160,12 +172,18 @@
     border-bottom: 2px solid rgb(210, 208, 208);
     border-top:2px solid rgb(210, 208, 208); 
     display: flex;
+    margin: 1rem;
+}
+
+#high-score{
+    margin-left: 20rem !important;
 }
 
 #chart span{
     width: 25px;
     height: 25px;
     border-radius: 50%;
+    margin: 1rem;
     display: inline-block;
     background-color: rgb(129, 5, 238);
 }
@@ -198,7 +216,7 @@
 #checkbox{
     border: 1px solid gray;
 }
-
+/* 
 @media only screen and (max-width:950px){
     #section-2{
         margin: 0;
@@ -280,4 +298,4 @@
         max-width: 100%;
         margin: 0;
     }
-}
+} */

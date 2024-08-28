@@ -1,0 +1,35 @@
+#crouser{
+    display: flex;
+    justify-content: center;
+    width: 83vw;
+    overflow-x: auto;
+    margin-inline: auto;
+}
+
+#image-gallery{
+    width: 100%;
+    margin-inline: auto;
+    white-space: nowrap;
+}
+
+#image-gallery>div{
+    border: 1px solid black;
+    width: 300px;
+    display: inline-block;
+    margin: 10px;
+}
+
+#image-gallery img{
+    width: 100%;
+    height: auto;
+}
+
+#image-gallery h4, #image-gallery p{
+    margin: 0 1rem;
+    padding: 5px;
+}
+
+.price{
+    font-weight: 800;
+    font-size: 17px;
+}

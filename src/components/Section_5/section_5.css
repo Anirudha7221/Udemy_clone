@@ -1,19 +1,15 @@
 #section-5{
-    height: 80vh;
+    height: 500px;
     display: flex;
-    margin: 0 2rem;
-}
-
-#section-5 div{
-    height: 90%;
 }
 
 #future-work{
     flex-basis: 30%;
 }
 
-#future-work>p,h1,div{
-    margin: 2rem;
+#future-work>p, #future-work>h1{
+    margin: 1rem 5rem;
+    width: 180px;
 }
 
 #future-work>div{
@@ -21,21 +17,23 @@
     align-items: center;
     justify-content: center;
     border: 1px solid  black;
+    margin:0 5rem;
     font-weight: 700;
     width: 10vw;
     height: 10vh;
 }
 
 #trend-report{
-    flex-basis: 70%;
+    flex-basis: 60%;
     height: 80vh;
 }
 
 #trend-report>img{
-    height: 100%;
+    width: 100%;
+    height: auto;
 }
 
-@media only screen and (max-width:950px){
+/* @media only screen and (max-width:950px){
     #section-5{
         margin: 0;
         display: flex;
@@ -68,4 +66,4 @@
         width: 100%;
         height: auto;
     }
-}
+} */

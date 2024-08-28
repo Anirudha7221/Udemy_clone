@@ -5,10 +5,13 @@
 #section-1>h3{
     text-align: center;
     color: gray;
+    margin: 2rem 0;
 }
 
 #companies{
     display: flex;
+    margin: 0 5rem;
+    justify-content: space-between;
 }
 
 #companies>div{
@@ -19,7 +22,7 @@
     height: 40%;
     width: 100%;
 }
-
+/* 
 @media only screen and(max-width:950px){
     #section-1{
         width: 80%;
@@ -46,4 +49,4 @@
         width: 80%;
         height: auto;
     }
-}
+} */

@@ -1,13 +1,16 @@
 #hero-containeer{
     display: flex;
-    gap: none;
-    height: 50vh;
+    height: 60vh;
+}
+
+#hero-box{
+    margin:0 3rem;
 }
 
 #culture{
-    height: 50vh;
+    height: 60vh;
     width: 600px;
-    flex-basis: 50%;
+    flex-basis: 60%;
 } 
 
 #culture>img{
@@ -16,19 +19,18 @@
 }
 
 #sales-box{
-    background-color: #b228f9;
-    flex-basis: 50%;
+    background-color: #40dbb8;
+    flex-basis: 40%;
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content: center;
-    height: 100%;
 }
 
 #sales-info{
     background-color: white;
     color: black;
     width: 30vw;
-    padding: 10px;
+    padding: 40px;
 }
 
 #sales-info>h1{
@@ -36,7 +38,7 @@
 }
 
 #skills-info{
-    padding: 5px;
+    padding: 20px;
 }
 
 #skills-info>p{
@@ -44,7 +46,7 @@
     color: gray;
 }
 
-@media only screen and (max-width:950px){
+/* @media only screen and (max-width:950px){
     #hero-cotaineer{
         display: flex;
         flex-direction: column;
@@ -80,7 +82,7 @@
         font-size: 3em;
         margin: 0;
     }
-}
+} */
 
 @media only screen and (min-width:950px) {
     #newSales-info{

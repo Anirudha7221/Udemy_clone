@@ -1,5 +1,4 @@
 #section-6{
-    margin: 0 2rem;
     background-color: #f0f0f0;
     padding:20px;
 }
@@ -7,11 +6,13 @@
 #section-6>h1{
     border-bottom: 1px solid rgb(208, 198, 198);
     padding: 10px;
+    margin: 0 2rem;
 }
 
 #section-6>div{
     display: flex;
     gap: 50px;
+    margin: 0 2rem;
 }
 
 #chatGPT>div, #development>div, #design>div, #business>div{
@@ -21,13 +22,14 @@
     cursor: pointer;
 }
 
-.active:hover{
+.working:hover{
     color: rgb(103, 6, 188);
 }
 
 #trending-skills{
     border: 1px solid black;
     font-size: 17px;
+    margin: 1rem;
     font-weight: 700;
 }
 
@@ -42,10 +44,11 @@
     color: black !important;
 }
 
-.active{
+.working{
     color: rgb(129, 5, 238);
+    padding: 10px;
 }
-
+/* 
 @media only screen and (max-width:950px){
     #section-6{
         margin: 0;
@@ -80,4 +83,4 @@
         font-size: 1em;
         margin: 0;
     }
-}
+} */

@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import Hero_containeer from './components/Hero-cotaineer/Hero_cotaineer';
+import Gallery from './components/Gallery/Gallery';
 import Section_1 from './components/Section_1/Section_1';
 import Section_2 from './components/Section_2/Section_2';
 import Section_3 from './components/Section_3/Section_3';
@@ -16,6 +17,7 @@ function App() {
      <div className="App">
         <Navbar></Navbar>
         <Hero_containeer></Hero_containeer>
+        <Gallery></Gallery>
         <Section_1></Section_1>
         <Section_2></Section_2>
         <Section_3></Section_3>
