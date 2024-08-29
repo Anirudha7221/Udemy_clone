@@ -10,6 +10,7 @@
 
 #companies{
     display: flex;
+    position: relative;
     margin: 0 5rem;
     justify-content: space-between;
 }

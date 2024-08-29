@@ -2,8 +2,12 @@
     display: flex;
     justify-content: center;
     width: 83vw;
-    overflow-x: auto;
+    overflow-x: hidden;
     margin-inline: auto;
+}
+
+#crouser::-webkit-scrollbar{
+    display: none;
 }
 
 #image-gallery{
@@ -12,11 +16,41 @@
     white-space: nowrap;
 }
 
-#image-gallery>div{
-    border: 1px solid black;
+#left-btn, #right-btn{
+    position: absolute;
+}
+
+#left-btn{
+    margin-top: 8rem;
+    margin-left: 3rem;
+}
+
+#right-btn{
+    margin-left: 90rem;
+    margin-top: -17rem;
+}
+
+#left-btn, #right-btn{
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    padding: 10px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(52, 52, 52);
+}
+
+.info-containeer{
+    border: 1px solid #a7a5a5;
     width: 300px;
+    position: relative;
+    border-radius: 10px;
     display: inline-block;
     margin: 10px;
+    padding: 5px;
 }
 
 #image-gallery img{
@@ -32,4 +66,79 @@
 .price{
     font-weight: 800;
     font-size: 17px;
+}
+
+.info-containeer:hover{
+    cursor: pointer;
+}
+
+.info-containeer:hover .course-info{
+    display: block;
+}
+
+.course-info{
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    left: 100%;
+    top: -20px;
+    max-width: 25vw;
+    max-height: 70vh;
+    background-color: #f9f9f9;
+    z-index: 1;
+}
+
+.details{
+    border: 1px solid rgb(198, 198, 198);
+    /* padding: 10px; */
+}
+
+.details>h1:hover{
+    color: rgb(3, 3, 112);
+    cursor: pointer;
+}
+
+.details>h1, .details>p{
+    margin: 0 1rem;
+}
+
+.details>h1{
+    font-size: 1.5rem;
+}
+
+.details p{
+    font-size: 0.9rem;
+}
+
+.details>span{
+    color: gray;
+    margin: 0 1rem;
+}
+
+.details>div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+.details>button{
+    padding: 10px;
+    width: 20vw;
+    height: 8vh;
+    background-color: #8710d8;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 1rem 2rem;
+    font-weight: 700;
+}
+
+#btn{
+    border: 1px solid black;
+    padding: 10px;
+    width: 20vw;
+    margin: 1rem 5rem;
+    cursor: pointer;
+    font-weight: 700;
 }

@@ -1,0 +1,58 @@
+#section-7{
+    display: flex;
+    justify-content: center;
+    width: 85vw;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-inline: auto;
+}
+
+#company-gallery{
+    width: 100%;
+    margin-inline: auto;
+    white-space: nowrap;
+}
+
+.gallery{
+    display: inline-table;
+    margin: 10px;
+    width: 50%;
+}
+
+.gallery>div{
+    display: flex;
+    gap: 10px;
+    height: 70vh;
+    flex-basis: 50%;
+}
+
+.gallery h1, .gallery h3, #percentage>p{
+    margin: 2rem;
+}
+
+.gallery img{
+    width: 40vw;
+    height: auto;
+}
+
+#percentage, #story-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    margin: 1rem;
+}
+
+#percentage h1{
+    font-size: 3rem;
+}
+
+#percentage>div{
+    border-bottom: 1px solid gray;
+}
+
+#story-btn{
+    background-color: black;
+    color: white;
+    width: 15vw;
+}

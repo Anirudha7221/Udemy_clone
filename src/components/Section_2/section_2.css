@@ -96,8 +96,8 @@
 
 #colours-circle>span{
     margin: 0 1rem;
-    width: 25px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     display: inline-block;
 }
@@ -119,18 +119,25 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    margin: 0 3rem;
+}
+
+#score>h1{
+    font-size: 1.2rem;
 }
 
 #score>p{
     text-decoration: underline;
     color: rgb(129, 5, 238);
     cursor: default;
+    font-size: 1rem;
 }
 
 #performance{
     display: flex;
     align-items: center;
     gap: 10px;
+    margin: 0 3rem;
     padding: 10px;
     border: 1px solid rgb(210, 208, 208);
 }
@@ -140,7 +147,12 @@
 }
 
 #answers>h2, #answers>p{
-    margin: 0 2rem;
+    margin: 0 3rem;
+    font-size: 1rem;
+}
+
+#answer{
+    margin: 0 3rem;
 }
 
 #answer-score, .ans{
@@ -172,7 +184,8 @@
     border-bottom: 2px solid rgb(210, 208, 208);
     border-top:2px solid rgb(210, 208, 208); 
     display: flex;
-    margin: 1rem;
+    padding: 5px;
+    margin: 1rem 3rem;
 }
 
 #high-score{
@@ -188,6 +201,10 @@
     background-color: rgb(129, 5, 238);
 }
 
+#chart h2, #chart p{
+    font-size: 1rem;
+}
+
 #below-score{
     background-color:rgb(210, 208, 208) !important;  
     /* margin-right: 0 20rem !important; */
@@ -197,8 +214,13 @@
     display: flex;
     align-items: baseline;
     gap: 10px;
+    margin: 0 3rem;
     border: 1px solid gray;
     background-color: #f6f9fa;
+}
+
+#ans-box p{
+    font-size: 0.8rem;
 }
 
 #ques-no{
@@ -207,10 +229,10 @@
     gap: 20px;
 }
 
-#ques-no>p{
+#ques-no>h2{
     color: gray;
     font-weight: 700;
-    font-size: 17px;
+    font-size: 1rem;
 }
 
 #checkbox{

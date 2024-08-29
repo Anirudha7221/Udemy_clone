@@ -1,6 +1,7 @@
 #hero-containeer{
     display: flex;
     height: 60vh;
+    position: relative;
 }
 
 #hero-box{

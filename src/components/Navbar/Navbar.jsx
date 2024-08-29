@@ -1,61 +1,13 @@
 import React from "react";
+import Dropdown from "./Dropdown/Dropdown";
 import './navbar.css';
 
 function Navbar(){
     return(
         <>
             <div id="navbar">
-            <span id="menu" class="material-symbols-outlined">
-                    menu
-                </span> 
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJXzeImAiH1KttGE_h6Si1V2WwaiGPpBUGXQ&s"/>
-                <div id='dropdown'>
-                    <p>Categories</p>
-                    <div id="dropdown-list">
-                    <div>
-                        <p>Developement</p>
-                        <span class="material-symbols-outlined">
-                            chevron_right
-                        </span>
-                     </div>
-                     <div>
-                        <p>Busniess</p>
-                        <span class="material-symbols-outlined">
-                            chevron_right
-                        </span>
-                     </div>
-                     <div>
-                        <p>IT Software</p>
-                        <span class="material-symbols-outlined">
-                            chevron_right
-                        </span>
-                     </div>
-                     <div>
-                        <p>Design</p>
-                        <span class="material-symbols-outlined">
-                            chevron_right
-                        </span>
-                     </div>
-                     <div>
-                        <p>Marketing</p>
-                        <span class="material-symbols-outlined">
-                            chevron_right
-                        </span>
-                     </div>
-                     <div>
-                        <p>Lifestyle</p>
-                        <span class="material-symbols-outlined">
-                            chevron_right
-                        </span>
-                     </div>
-                     <div>
-                        <p>Finance & Accounting</p>
-                        <span class="material-symbols-outlined">
-                            chevron_right
-                        </span>
-                     </div>
-                    </div>
-                </div>
+                <Dropdown></Dropdown>
                 <div id="searchbar">
                         <span class="material-symbols-outlined">
                             search
