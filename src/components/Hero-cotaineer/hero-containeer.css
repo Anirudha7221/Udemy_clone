@@ -47,16 +47,25 @@
     color: gray;
 }
 
-/* @media only screen and (max-width:950px){
-    #hero-cotaineer{
+#newSales-info{
+    margin: 0;
+}
+
+#newSales-info>h1{
+    font-size: 30px;
+}
+
+#newSales-info>p{
+    margin: 0 1rem;
+}
+@media only screen and (max-width:950px){
+    #hero-cotaineer, #hero-box{
         display: flex;
         flex-direction: column;
-        margin: 0;
-        gap: 10px;
     }
     
     #culture{
-        width: 90%;
+        width: 100%;
     }
 
     #culture>img{
@@ -76,14 +85,14 @@
     }
 
     #skills-info{
-        width: 80%;
+        width: 100%;
+        margin: 0;
     }
 
     #skills-info h1 p{
-        font-size: 3em;
-        margin: 0;
+        font-size: 2em;
     }
-} */
+}
 
 @media only screen and (min-width:950px) {
     #newSales-info{
@@ -96,16 +105,4 @@
         margin: 0;
         font-size: 5em;
     }
-}
-
-#newSales-info{
-    margin: 0;
-}
-
-#newSales-info>h1{
-    font-size: 30px;
-}
-
-#newSales-info>p{
-    margin: 0 1rem;
 }

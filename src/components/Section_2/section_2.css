@@ -238,7 +238,7 @@
 #checkbox{
     border: 1px solid gray;
 }
-/* 
+
 @media only screen and (max-width:950px){
     #section-2{
         margin: 0;
@@ -254,8 +254,8 @@
     }
 
     #score-card{
-        max-width: 100%;
-        margin: 0;
+        width: 80%;
+        margin: 0 auto;
     }
 
     #colours-circle>span{
@@ -320,4 +320,24 @@
         max-width: 100%;
         margin: 0;
     }
-} */
+
+    #high-score{
+        margin-left: 15rem !important;
+    }
+}
+
+@media only screen and (max-width:480px){
+    #section-2>h1{
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    #score-card{
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    #high-score{
+        margin-left: 10rem !important;
+    }
+}

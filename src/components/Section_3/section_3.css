@@ -66,10 +66,10 @@
 .plan-details>img{
     width: 6%;
 }
-/* 
-@media only screen and (max-width:950px){
+
+@media only screen and (max-width:950px) and (max-width:480px){
     #section-3, .plans div{
-        margin: 0;
+        margin: 1rem;
         max-width: 100%;
     }
 
@@ -84,43 +84,40 @@
     }
 
     #plans-containeer{
-        display: inline;
+        display: block;
         align-items: center;
     }
-
     #plans-containeer div{
-        margin: 0;
+        margin: 0 auto;
         max-width: 100%;
-        width: 60%;
+        width: 60vw;
+        gap: 10px;
     }
 
-    .plans h2, #plans-containeer h2, .button h2{
-        font-size: 1.5em;
+    .plans h2, #plans-containeer h2{
+        font-size: 1.2em;
         width: 300px;
     }
 
     .plans p, #plans-containeer p, .plan-details p{
-        font-size: 1em;
-        width: 200px;
+        font-size: 1rem;
     }
 
     .button{
-        width: 200% !important;
-        margin: 1rem;
-        height: 70px;
+       display: none;
     }
 
     .plan-details{
-        width: 20%;
-        height: 20%;
+        width: 100%;
+        height: 7vh;
     }
 
     .plan-details img{
-        width: 100%;
+        width: 20%;
         height: auto;
     }
 
     #active-now{
         display: block;
     }
-} */
+}

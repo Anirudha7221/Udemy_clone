@@ -1,13 +1,10 @@
 #crouser{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     width: 83vw;
     overflow-x: hidden;
     margin-inline: auto;
-}
-
-#crouser::-webkit-scrollbar{
-    display: none;
 }
 
 #image-gallery{
@@ -27,7 +24,7 @@
 
 #right-btn{
     margin-left: 90rem;
-    margin-top: -17rem;
+    margin-top: -18rem;
 }
 
 #left-btn, #right-btn{
@@ -45,7 +42,8 @@ button:hover{
 
 .info-containeer{
     border: 1px solid #a7a5a5;
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     position: relative;
     border-radius: 10px;
     display: inline-block;
@@ -141,4 +139,28 @@ button:hover{
     margin: 1rem 5rem;
     cursor: pointer;
     font-weight: 700;
+}
+
+@media only screen and (max-width: 950px) {
+    .info-containeer {
+        width: 48%; 
+        margin: 5px 0; 
+    }
+
+    #left-btn{
+        margin-left: 0;
+    }
+
+    #btn{
+        width: 80%;
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width:480px){
+    #btn{
+        margin: 1rem 2rem;
+        font-size: 0.7rem;
+    }
 }

@@ -6,8 +6,11 @@ function Navbar(){
     return(
         <>
             <div id="navbar">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJXzeImAiH1KttGE_h6Si1V2WwaiGPpBUGXQ&s"/>
+                <img id='img-1'src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJXzeImAiH1KttGE_h6Si1V2WwaiGPpBUGXQ&s"/>
                 <Dropdown></Dropdown>
+                <div id='img-2'>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJXzeImAiH1KttGE_h6Si1V2WwaiGPpBUGXQ&s"/>
+                </div>
                 <div id="searchbar">
                         <span class="material-symbols-outlined">
                             search

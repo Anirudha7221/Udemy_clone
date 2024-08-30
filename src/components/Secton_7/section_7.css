@@ -56,3 +56,23 @@
     color: white;
     width: 15vw;
 }
+
+@media only screen and (max-width:950px){
+    .gallery h3, .gallery h1, #percentage h1{
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .gallery>div{
+        height: 50%;
+    }
+
+    #percentage p{
+        display: none;
+    }
+
+    #story-btn{
+        width: 100%;
+        margin: 0;
+    }
+}

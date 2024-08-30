@@ -12,9 +12,8 @@ function Section_4(){
                          <p>Udemy was rated the <b>most popular online courses or certification program </b>for learning how to code according to<br/><span id="span">StackOverflow's 2023 Developer survey.</span></p>
                          <div class="user">
                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Stack_Overflow_icon.svg/768px-Stack_Overflow_icon.svg.png"/>
-                             <p>stack <b>overflow</b></p>
+                             <p class="user-info">37,076 responses collected</p>
                          </div>
-                         <p class="user-info">37,076 responses collected</p>
                          <div class="current-active">
                              <p>View web development courses</p>
                              <span class="material-symbols-outlined">
@@ -55,7 +54,7 @@ function Section_4(){
                          <p>With Udemy Business employee were<br/> able to marry the two together, technology<br/> and consultant soft skills...to help<br/><b>drive their career forward.</b></p>
                          <div class="user">
                              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWn8JPhV1ED63Ej1_lPm8xivi8Vf2BRtkhYA&s"/>
-                             <p class="user-info">Ian Stevens<br/>Head of Capability Development, North America at Public Sapient</p>
+                             <p class="user-info">I'm Stevens<br/>Head of Capability Development, North America at Public Sapient</p>
                          </div>
                          <div class="current-active">
                              <p>Read full story</p>

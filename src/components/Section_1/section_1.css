@@ -10,44 +10,36 @@
 
 #companies{
     display: flex;
-    position: relative;
     margin: 0 5rem;
     justify-content: space-between;
 }
 
 #companies>div{
-    height: 25vh;
+    width: 20vw;
 }
 
 #companies img{
-    height: 40%;
+    height: auto;
     width: 100%;
 }
-/* 
-@media only screen and(max-width:950px){
-    #section-1{
-        width: 80%;
-        margin: 0;
-    }
 
+@media only screen and (max-width:750px){
     #section-1>h3{
-        font-size: 3em;
-        font-weight: 200 !important;
+        font-size: 1rem;
     }
 
-     #companies{
-        display: grid !important;
-        grid-template-columns: repeat(4, 1fr) !important;
-    } 
-
-    #companies>div{
-        border: 1px solid red;
-        height: 50px;
-        width: 50px;
+    #companies{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        margin: 2rem;
     }
 
-    #companies img{
-        width: 80%;
-        height: auto;
+}
+
+@media only screen and (max-width: 480px){
+    #companies{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin: 1rem;
     }
-} */
+}

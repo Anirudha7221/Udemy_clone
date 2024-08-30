@@ -48,7 +48,7 @@
     color: rgb(129, 5, 238);
     padding: 10px;
 }
-/* 
+
 @media only screen and (max-width:950px){
     #section-6{
         margin: 0;
@@ -56,7 +56,8 @@
     }
 
     #section-6>div{
-        display: inline;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
     }
 
     #section-6 h1{
@@ -83,4 +84,8 @@
         font-size: 1em;
         margin: 0;
     }
-} */
+
+    #trending-skills{
+        display: none !important;
+    }
+}

@@ -1,4 +1,4 @@
-
+/* Main Dropdown */
 #dropdown p:hover, #dropdown-list p:hover{
     text-decoration: underline;
     cursor: pointer;
@@ -9,7 +9,7 @@
     display: inline-block;
 }
 
-#dropdown-list>div{
+.dropdown-item{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,4 +29,52 @@
 
 #dropdown:hover #dropdown-list{
     display: block;
+}
+
+/* Sub-dropddown */
+.has-sublist{
+    position: relative;
+}
+
+.submenu{
+    display: none;
+    position: absolute;
+    left: 105%;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #f9f9f9;
+    min-width: 10vw;
+    padding: 12px 16px;
+}
+
+#login-content{
+    border-bottom: 1px solid rgb(174, 173, 173);
+    display: none;
+}
+
+#login-content>p{
+    padding: 10px;
+}
+
+.has-sublist:hover .submenu{
+    display: block;
+}
+
+@media only screen and (max-width:950px){
+    #dropdown>p{
+        display: none;
+    }
+   
+    #dropdown{
+        justify-content: flex-start;
+    }
+
+    .dropdown-item{
+        width: 25vw;
+    }
+
+    #login-content{
+        display: block;
+    }
 }
