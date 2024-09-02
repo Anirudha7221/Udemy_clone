@@ -67,9 +67,9 @@
     width: 6%;
 }
 
-@media only screen and (max-width:950px) and (max-width:480px){
+@media only screen and (max-width:950px){
     #section-3, .plans div{
-        margin: 1rem;
+        margin: 3rem 0;
         max-width: 100%;
     }
 
@@ -84,8 +84,8 @@
     }
 
     #plans-containeer{
-        display: block;
-        align-items: center;
+        display: flex;
+        flex-direction: column;
     }
     #plans-containeer div{
         margin: 0 auto;
@@ -95,7 +95,7 @@
     }
 
     .plans h2, #plans-containeer h2{
-        font-size: 1.2em;
+        font-size: 1em;
         width: 300px;
     }
 

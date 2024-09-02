@@ -35,7 +35,7 @@
 
 @media only screen and (max-width:950px){
     #section-5{
-        margin: 1rem;
+        margin: 3rem 0;
         display: flex;
         flex-direction: column-reverse;
     }

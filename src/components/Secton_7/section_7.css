@@ -1,7 +1,7 @@
 #section-7{
     display: flex;
     justify-content: center;
-    width: 85vw;
+    width: 80vw;
     overflow-x: auto;
     overflow-y: hidden;
     margin-inline: auto;
@@ -55,6 +55,7 @@
     background-color: black;
     color: white;
     width: 15vw;
+    cursor: pointer;
 }
 
 @media only screen and (max-width:950px){

@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:ital,wght@1,200;1,500&display=swap');
+
+#Register-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Montserrat;
+}
+
+#Register{
+    position: relative;
+    width: 480px;
+    height: 480px;
+    background: #fff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 20px -20px 100px 0px rgba(34,35,218,0.6), -20px 20px 100px 0px rgba(220,55,120,0.6);
+}
+
+#Register h1{
+    font-weight: bolder;
+    text-align: center;
+}
+
+.input-box{
+    position: relative;
+    width: 310px;
+    margin: 30px 0;
+    border-bottom: 2px solid gray;
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+}
+
+.input-box input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon{
+    position: absolute;
+    font-size: 1.2em;
+    right: 8px;
+    line-height: 57px;
+}
+
+#Register button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+#Register button:hover{
+    color: white;
+}
+
+#success{
+    color: green;
+    padding: 10px;
+    text-align: center;
+    font-weight: 700;
+    display: none;
+}
+
+#error{
+    color: red;
+    padding: 10px;
+    text-align: center;
+    font-weight: 700;
+    display: none;
+}
+
+#login-link{
+    font-size: 0.9em;
+    text-align: center;
+    margin: 2rem;
+    font-weight: 600;
+}

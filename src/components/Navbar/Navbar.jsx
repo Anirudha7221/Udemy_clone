@@ -1,8 +1,20 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Dropdown from "./Dropdown/Dropdown";
 import './navbar.css';
 
 function Navbar(){
+
+    const Navigate= useNavigate('');
+
+    const Logout=()=>{
+        Navigate('/login');
+    }
+
+    const Signup=()=>{
+        Navigate('/');
+    }
+
     return(
         <>
             <div id="navbar">
@@ -26,8 +38,8 @@ function Navbar(){
                     shopping_cart
                 </span>
                 <div id="nav-buttons">
-                    <button>Login</button>
-                    <button id="signup">SignUp</button>
+                    <button onClick={Logout}>Logout</button>
+                    <button id="signup" onClick={Signup}>SignUp</button>
                     <button>
                         <span class="material-symbols-outlined">
                         language

@@ -58,15 +58,19 @@
 #newSales-info>p{
     margin: 0 1rem;
 }
+
 @media only screen and (max-width:950px){
     #hero-cotaineer, #hero-box{
         display: flex;
         flex-direction: column;
+        gap: 0;
+        margin: 0 3rem;
     }
     
     #culture{
-        width: 100%;
+        width: 80vw;
     }
+
 
     #culture>img{
         width: 100%;
@@ -75,18 +79,15 @@
 
     #sales-box{
         display: none;
-        margin: 0;
     }
 
     #hero-containeer{
         display: flex;
-        margin: 0;
         flex-direction: column;
     }
 
     #skills-info{
         width: 100%;
-        margin: 0;
     }
 
     #skills-info h1 p{
@@ -102,7 +103,6 @@
     
     #newSales-info h1 p{
         width: 80%;
-        margin: 0;
         font-size: 5em;
     }
 }
