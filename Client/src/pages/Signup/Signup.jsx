@@ -1,72 +1,67 @@
 import React from "react";
+import axios  from 'axios';
+import { useState } from "react";
 import '../Signup/signup.css';
 
 function Signup(){
 
-    const handleSubmit=(e)=>{
+    const [email, setEmail]=useState('');
+    const [pass, setPass]=useState();
+    const [confirmPass, setConfirmPass]=useState();
+
+    async function handleSubmit(e) {
         e.preventDefault();
-    }
 
-    const SignedIn=()=>{
-        console.log("clicked");
-
-        
-        const UserID=document.forms["signup-form"].userId.value;
-
-        const Pass=document.forms["signup-form"].pass.value;
-
-        const ConfirmPass= document.forms["signup-form"].confirmpass.value
-
-        // console.log(UserID, Pass, ConfirmPass);
-
-        var data={
-            "username":UserID,
-            "password":Pass
+        try {
+            let user=await axios.post("http://localhost:8000/",{
+                email, confirmPass
+            })
+        } catch (error) {
+            console.log(error);
         }
 
-        if(Pass === ConfirmPass){
-            const Successfully_Register=document.getElementById('success');
-            Successfully_Register.style.display="block";
+        const Error = document.getElementById("error");
+        const success = document.getElementById("success");
+
+        if(pass===confirmPass){
+            success.style.display='block';
         }
-        else
-        {
-            const Error=document.getElementById("error");
+        else{
             Error.style.display='block';
-            setTimeout(() => {
-                Error.style.display='none';
-            },5000);
         }
 
-        window.localStorage.setItem('data',JSON.stringify(data));
+        setTimeout(() => {
+            Error.style.display='none';
+        },3000);
     }
 
     return(
     <div id="Register-box">
         <div id="Register">
-        <form name="signup-form" onSubmit={handleSubmit}>
+        <form action='POST' name="signup-form">
             <h1>Register</h1>
             <div class="input-box">
                 <span class="material-symbols-outlined icon">
                     mail
                 </span>
-                <input type="text" name="userId" required/>
+                <input type="email" name="userId" value={email} onChange={(e)=>{setEmail(e.target.value)}} required/>
                 <label>Username</label>
             </div>
             <div class="input-box">
                 <span class="material-symbols-outlined icon">
                     lock
                 </span>
-                <input type="password" name="pass" required/>
+                <input type="password" name="pass" value={pass} onChange={(e)=>{setPass(e.target.value)}} required/>
                 <label>Password</label>
             </div>
             <div class="input-box">
                 <span class="material-symbols-outlined icon">
                     lock
                 </span>
-                <input type="password" name="confirmpass" required/>
+                <input type="password" name="confirmpass" value={confirmPass} onChange={(e)=>{setConfirmPass(e.target.value)}} required/>
                 <label>Confirm Password</label>
             </div>
-            <button type="submit" onClick={SignedIn}>Register</button>
+            <button type="submit" onClick={handleSubmit}>Register</button>
             <p id="success">Registration Sucessfull...!</p>
             <p id="error">Password & Confirm Password Didn't Match</p>
             <div id="login-link">

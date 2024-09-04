@@ -6,9 +6,7 @@ const cors = require('cors');
 
 const connectDB = require('./database');
 
-const RegisterUser = require('./models/register');
-
-const LoginUser = require('./models/login');
+const User = require('./models/user');
 
 const app =express();
 app.use(express.json());
@@ -16,20 +14,21 @@ app.use(cors());
 
 connectDB();
 
-app.post('/', async(req,res) => {
-    let user=new RegisterUser(req.body);
-
-    let result=await user.save();
-    res.send(result);
-});
 
 app.post('/', async(req,res) => {
-    let user=new LoginUser(req.body);
+    let user=new User(req.body);
+    user=await user.save();
 
-    let result=await user.save();
-    res.send(result);
+    // console.log("Register-page",user);
 });
 
-app.listen(3000,()=>{
+
+app.get('/', async(req,res) => {
+    let email=User(req.params.email);
+    let passWord=User(req.params.password);
+     res.send({email,passWord});
+});
+
+app.listen(8000,()=>{
     console.log("app is running");
 })
