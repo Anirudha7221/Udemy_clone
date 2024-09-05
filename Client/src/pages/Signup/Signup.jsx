@@ -12,14 +12,6 @@ function Signup(){
     async function handleSubmit(e) {
         e.preventDefault();
 
-        try {
-            let user=await axios.post("http://localhost:8000/",{
-                email, confirmPass
-            })
-        } catch (error) {
-            console.log(error);
-        }
-
         const Error = document.getElementById("error");
         const success = document.getElementById("success");
 
@@ -33,12 +25,22 @@ function Signup(){
         setTimeout(() => {
             Error.style.display='none';
         },3000);
+
+        
+        try {
+            await axios.post("http://localhost:8000/",{
+                email,
+                password : pass
+            })
+        } catch (error) {
+            console.log(error);
+        }
     }
 
     return(
     <div id="Register-box">
         <div id="Register">
-        <form action='POST' name="signup-form">
+        <form action='submit' name="signup-form">
             <h1>Register</h1>
             <div class="input-box">
                 <span class="material-symbols-outlined icon">

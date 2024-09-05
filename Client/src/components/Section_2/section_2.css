@@ -241,11 +241,15 @@
 
 @media only screen and (max-width:950px){
     #section-2{
-        margin: 5rem -5rem;
+        margin: 3rem 1rem;
     }
 
     #section-2>h1{
         font-size: 1.5em;
+        margin: 0;
+    }
+
+    #section-2 div{
         margin: 0;
     }
 
@@ -254,8 +258,8 @@
     }
 
     #score-card{
-        width: 80%;
-        margin: auto;
+        width: 50%;
+        margin: 0;
     }
 
     #colours-circle>span{

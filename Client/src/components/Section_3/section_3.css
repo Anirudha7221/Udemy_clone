@@ -69,7 +69,7 @@
 
 @media only screen and (max-width:950px){
     #section-3, .plans div{
-        margin: 3rem 0;
+        margin: 1rem;
         max-width: 100%;
     }
 
@@ -88,19 +88,21 @@
         flex-direction: column;
     }
     #plans-containeer div{
-        margin: 0 auto;
+        margin: 1rem auto;
         max-width: 100%;
-        width: 60vw;
+        width: 70vw;
         gap: 10px;
     }
 
     .plans h2, #plans-containeer h2{
         font-size: 1em;
+        margin: 0;
         width: 300px;
     }
 
     .plans p, #plans-containeer p, .plan-details p{
         font-size: 1rem;
+        margin: 0;
     }
 
     .button{

@@ -97,8 +97,7 @@
         margin: 0;
     }
     .user>p{
-        font-size: 0.9em;
-        margin: 0;
+        display: none;
     }
 
     .current-active>p, .current-active>span{

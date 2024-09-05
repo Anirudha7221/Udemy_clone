@@ -90,6 +90,11 @@
         display: none;
     }
 
+    #navbaar{
+        width: 100%;
+        border: 1px solid red;
+    }
+
     #searchbar{
         border: none;
     }
@@ -115,7 +120,7 @@
 
     #img-2>img{
         /* margin-left: 15rem; */
-        width: 20%;
+        width: 50%;
         height: auto;
     }
 }

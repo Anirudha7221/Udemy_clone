@@ -10,31 +10,28 @@ function Login(){
     const [password, setPassword]=useState('');
     const navigate=useNavigate('');
 
-    var email,pass;
-
     async function handleSubmit(e){
         e.preventDefault()
+        const msgDisplay=document.getElementById('error-msg');
 
         try {
-            await axios.get("http://localhost:8000/",{
-                email,pass
+            const response= await axios.post("http://localhost:8000/login",{
+                username,password
             })
-            console.log(email, pass);
+
+            if(response.status===200){
+                navigate('/home');
+            }
+            else{
+                msgDisplay.style.display='block';
+            }
+
+            setTimeout(() => {
+                msgDisplay.style.display='none';
+            }, 3000);
         }catch (error) {
             console.log(error);
         }
-
-        const msgDisplay=document.getElementById('error-msg');
-        if(pass===password){
-            navigate('./home');
-        }
-        else{
-            msgDisplay.style.display='block';
-        }
-
-        setTimeout(() => {
-            msgDisplay.style.display='none';
-        }, 3000);
     }
 
     return(
