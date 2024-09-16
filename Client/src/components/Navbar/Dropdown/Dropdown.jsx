@@ -1,7 +1,19 @@
 import React from "react";
 import './Dropdown.css';
+import { useNavigate } from "react-router-dom";
 
 function Dropdown(){
+
+    const navigate=useNavigate('');
+
+    const logout=()=>{
+        navigate('/login');
+    }
+
+    const signup=()=>{
+        navigate('/');
+    }
+
     return(
         <>
             <div id='dropdown'>
@@ -11,8 +23,8 @@ function Dropdown(){
                     </span> 
                     <div id="dropdown-list">
                         <div id="login-content">
-                            <p>Login</p>
-                            <p>SignUp</p>
+                            <button onClick={logout}><p>Logout</p></button>
+                            <button onClick={signup}><p>SignUp</p></button>
                             <p>Plans & Pricing</p>
                         </div>
                         <div class='dropdown-item has-sublist'>

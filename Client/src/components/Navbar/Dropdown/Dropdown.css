@@ -53,7 +53,12 @@
     display: none;
 }
 
-#login-content>p{
+#login-content>button{
+    background: none;
+    border: none;
+}
+
+#login-content p{
     padding: 10px;
 }
 

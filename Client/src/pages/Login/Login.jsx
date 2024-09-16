@@ -8,29 +8,30 @@ function Login(){
 
     const [username, setUsername]=useState('');
     const [password, setPassword]=useState('');
+    const [errormsg, setErrormsg]=useState('');
     const navigate=useNavigate('');
+
 
     async function handleSubmit(e){
         e.preventDefault()
-        const msgDisplay=document.getElementById('error-msg');
-
+        setErrormsg('');
         try {
             const response= await axios.post("http://localhost:8000/login",{
-                username,password
+                email :username,
+                password
             })
 
             if(response.status===200){
                 navigate('/home');
             }
-            else{
-                msgDisplay.style.display='block';
-            }
-
-            setTimeout(() => {
-                msgDisplay.style.display='none';
-            }, 3000);
         }catch (error) {
             console.log(error);
+            
+            setErrormsg("Usename & password is wrong Please try again !");
+
+            setTimeout(() => {
+                setErrormsg('');
+            }, 3000);
         }
     }
 
@@ -55,10 +56,14 @@ function Login(){
             </div>
             <div id="forgot">
                 <label><input type="checkbox"/> Remember me </label>
-                <a href="#">Forgot password</a>
+                <a href="/reset-password">Forgot password</a>
             </div>
             <button type="submit" onClick={handleSubmit}>Login</button>
-            <p id="error-msg">Usename & password is wrong Please try again !</p>
+            {
+                errormsg && (
+                    <p id='error-msg'>{errormsg}</p>
+                )
+            }
             <div id="register-link">
                 <p>Don't have an account ? <a href="/">Register</a></p>
             </div>

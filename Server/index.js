@@ -42,25 +42,46 @@ app.post('/', async(req,res) => {
 
 
 app.post('/login',async(req,res)=>{
-    const {email,password}=req.body;
+    const {email,newpassword}=req.body;
 
     try {
       const user = await User.findOne({email});
 
+      if(!user){
+        return res.status(401).send("User Not Found");
+      }
       const match= await bcrypt.compare(password, user.password);
-      if(email === user.email){
-        if(match){
-          res.status(200).json();
-        }
-        else{
-          res.send("Wrong password");
-        }
+      
+      if(match){
+        return res.status(200).json();
       }
       else{
-        res.send("user not found");
+        return res.status(401).send("Wrong Password");
       }
     } catch (error) {
       res.status(404).json();
+    }
+})
+
+app.post('/reset-password', async(req,res)=>{
+    const {email,password}=req.body;
+
+    try {
+      const user=await User.findOne({email});
+
+      if(!user){
+        return res.status(401).send("User Not Found");
+      }
+
+      const changedPassword=await bcrypt.hash(password, saltround);
+
+      user.password=changedPassword;
+
+      await user.save();
+
+      res.status(200).send("Password Changed Successfuly");
+    } catch (error) {
+      return res.status(404).json();
     }
 })
 
