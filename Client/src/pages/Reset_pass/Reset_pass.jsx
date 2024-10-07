@@ -63,7 +63,7 @@ function Reset_pass(){
                 <input type="password" name="confirmpass" value={confirmPass} onChange={(e)=>{setConfirmPass(e.target.value)}} required/>
                 <label>Confirm Password</label>
             </div>
-            <button type="submit" onClick={handleSubmit}>Change</button>
+            <button type="submit" onClick={handleSubmit}>Submit</button>
             <p id="success">Password Changed Sucessfull...!</p>
             <p id="error">Password & Confirm Password Didn't Match</p>
             <div id="login-link">

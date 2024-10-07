@@ -22,7 +22,7 @@ app.use(cors());
 
 connectDB();
 
-
+// Register
 app.post('/', async(req,res) => {
 
   try {
@@ -40,9 +40,9 @@ app.post('/', async(req,res) => {
   }
 });
 
-
+// Login
 app.post('/login',async(req,res)=>{
-    const {email,newpassword}=req.body;
+    const {email,password}=req.body;
 
     try {
       const user = await User.findOne({email});
@@ -63,8 +63,9 @@ app.post('/login',async(req,res)=>{
     }
 })
 
+// Reset-password
 app.post('/reset-password', async(req,res)=>{
-    const {email,password}=req.body;
+    const {email,newpassword}=req.body;
 
     try {
       const user=await User.findOne({email});
@@ -73,7 +74,7 @@ app.post('/reset-password', async(req,res)=>{
         return res.status(401).send("User Not Found");
       }
 
-      const changedPassword=await bcrypt.hash(password, saltround);
+      const changedPassword=await bcrypt.hash(newpassword, saltround);
 
       user.password=changedPassword;
 
